@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p id="password"> Generate Password!</p>
+            
+            <div class="row">
+                <label for="password-length">Password length</label>
+                <input type="number" id="password-length" value="10">
+            </div>
+
+            <div class="row">
+                <div class="left-div">
+                    <label for="upper-case">Contains UpperCase</label>
+                </div>
+                <div class="right-div">
+                    <input type="checkbox" name="" id="upper-case" checked>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="left-div">
+                    <label for="lower-case">Contains LowerCase</label>
+                </div>
+                <div class="right-div">
+                    <input type="checkbox" name="" id="lower-case">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="left-div">
+                    <label for="numbers">Contains Numbers</label>
+                </div>
+                <div class="right-div">
+                    <input type="checkbox" name="" id="numbers">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="left-div">
+                    <label for="symbols">Contains Symbols</label>
+                </div>
+                <div class="right-div">
+                    <input type="checkbox" name="" id="symbols">
+                </div>
+            </div>
+            <div class="row">
+                <button id="btn" onclick="getPassword()">Generate Password</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

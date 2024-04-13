@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    padding: 50px;
+    /* border: 1px solid white; */
+    max-width: 490px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius:20px;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+}
+.search{
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.search input{
+    display: flex;
+    flex: 1;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+}
+.search button{
+    padding: 9px 15px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    background: white;
+    color: #363535;
+    font-size: 18px;
+}
+
+.weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.weather img{
+    width: 150px;
+}
+
+.weather  .temp{
+    font-size: 55px;
+    color: white;
+    font-weight: 600;
+    line-height: 55px;
+}
+
+.weather .city{
+    font-size: 35px;
+    color: white;
+}
+
+.weather .details{
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    gap: 55px;
+    margin-top: 55px;
+    display: none;
+}
+
+
+.weather .details .col{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.weather .details .col p{
+    font-size: 20px;
+    color: white;
+}
+.weather .details .col .humidity{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+.weather .details .col .wind{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.weather .details .col img{
+    width: 70px;
+    
+}

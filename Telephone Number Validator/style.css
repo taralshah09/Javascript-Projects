@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #3b3b4f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#logo{
+    width: 250px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    user-select: none;
+}
+.title h2{
+    color: white;
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center
+}
+.box{
+    width: 90%;
+    max-width: 500px;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mobile-phone{
+    margin-top: 25px;
+    height: 70vh;
+    max-height: 70vh;
+    border: 15px solid black;
+    border-top: 50px solid;
+    border-bottom: 60px solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 260px;
+    position: relative;
+    background: rgb(206, 206, 206);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+#camera{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background: black;
+    position: absolute;
+    top: -30px;
+    right: 110px;
+}
+.buttons{
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    bottom: -45px;
+    right: 60px;
+}
+#check-btn , #clear-btn{
+    padding: 2.5px ;
+    font-size: 12px;
+    font-weight: 600;
+    width: 50px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+
+}
+
+#user-input{
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    outline: 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.result-el{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(63, 63, 63);
+    margin-top: 15px;
+}

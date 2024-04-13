@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, black, rgb(22, 65, 22));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  width: 90%;
+  max-width: 600px;
+  min-height: 500px;
+  background: white;
+  border-radius: 5px;
+  padding: 15px;
+  position: relative;
+}
+#item {
+  width: 100%;
+  padding: 5px 25px;
+  outline: none;
+  border: 2px solid;
+  border-radius: 5px;
+  font-size: 18px;
+  display: block;
+}
+
+#to-do-box {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 25px;
+  /* background: red; */
+}
+#to-do-box li {
+  /* background: red; */
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 10px 10px;
+  box-shadow: 0 0 2px rgb(47, 46, 46);
+  margin: 5px 0;
+  border-radius: 5px;
+  font-weight: 400;
+  color: black;
+  transition: 0.2s;
+}
+#to-do-box li:hover{
+    background: rgb(233, 231, 231);
+}
+#to-do-box li i {
+  position: absolute;
+  /* top: 15px; */
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 5px 7px;
+  background: red;
+  color: white;
+  right: 10px;
+}
+.done{
+    text-decoration: line-through;
+    color: grey;
+    user-select: none;
+}
