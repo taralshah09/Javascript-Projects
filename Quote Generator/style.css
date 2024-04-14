@@ -13,7 +13,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background: linear-gradient(145deg,#1c1a1a,rgb(49, 81, 49)); */
   background: linear-gradient(145deg, rgb(26, 91, 233), rgb(219, 219, 219));
 }
 
@@ -89,20 +88,42 @@
 }
 
 #copy{
-  position: absolute;
-  top: 90px;
-  right: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
   border: 1px solid rgb(72, 129, 254);
   background: white;
-  /* height: 25px; */
-  width: 35px;
-  padding: 5px;
-  border-radius: 50%;
+  padding: 9px;
+  /* color: rgb(72, 129, 254); */
+  background-color: white;
   color: rgb(72, 129, 254);
-  font-size: 16px;
+  font-weight:  600;
+  font-size: 18px;
+  border: 2px solid rgb(72, 129, 254);
+  outline: 0;
+  border-radius: 15px;
 }
 
 #copy:hover{
   cursor: pointer;
   
+}
+
+@media (max-width : 600px){
+  .container{
+    width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, rgb(26, 91, 233), rgb(219, 219, 219));
+
+  }
+  .box{
+    width: 350px;
+    font-size: 18px;
+
+  }
 }
