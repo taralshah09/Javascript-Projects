@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quote Generator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
-<script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <button id="copy"><i class="fa-solid fa-copy"></i></button>
+        <h2>Quote Generator</h2>
+        <div class="quote-box">
+          <p id="quote">
+            Take things as they are. Punch when you have to punch. Kick when you
+            have to kick.
+          </p>
+          <span id="author"> Bruce Lee </span>
+        </div>
+        <button id="generate">Generate Quote</button>
+      </div>
+
+
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/ddcbebe630.js" crossorigin="anonymous"></script>
+  <script>
+    // Add event listener to the copy button
+    document.getElementById('copy').addEventListener('click', function() {
+      // Get the text content of the quote-box div
+      var quoteText = document.querySelector('#quote').textContent;
+      var author = document.querySelector("#author").textContent;
+      
+      // Create a temporary textarea element
+      var textarea = document.createElement('textarea');
+      textarea.value = quoteText + "\n -" + author;
+      
+      // Append the textarea to the body
+      document.body.appendChild(textarea);
+      
+      // Select the text in the textarea
+      textarea.select();
+      
+      // Copy the selected text
+      document.execCommand('copy');
+      
+      // Remove the temporary textarea
+      document.body.removeChild(textarea);
+      
+      // Optionally, provide some visual feedback to the user
+      alert('Quote copied to clipboard!');
+    });
+  </script>
 </html>
+
