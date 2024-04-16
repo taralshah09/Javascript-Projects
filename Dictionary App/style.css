@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+}
+
+body {
+  background: #fbf5f3;
+}
+header {
+  width: 100vw;
+  padding: 15px;
+  background: #417b5a;
+  color: white;
+  font-size: 20px;
+}
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 81vh;
+  padding: 30px;
+  text-align: center;
+}
+main form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+main form input {
+  flex: 1;
+  padding: 8px 15px;
+  border: 0;
+  outline: 0;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+main form button {
+  padding: 8px 15px;
+  border: 0;
+  outline: 0;
+  background: #417b5a;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+footer {
+  background: #417b5a;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.result {
+  display: flex;
+  background: white;
+  max-width: 800px;
+  flex-direction: column;
+  margin-top: 25px;
+  padding: 25px 50px;
+  font-size: 16px;
+  /* display: none; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  /* text-align: left; */
+
+}
+
+@media (max-width : 750px) {
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    form input{
+        width: 100%;
+    }
+    form button{
+        width: 100%;
+    }
+}
