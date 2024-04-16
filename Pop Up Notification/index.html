@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pop Up Notification</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button id="submit" onclick="openPopup()">Submit</button>
+
+      <div class="notification">
+        <div id="tick"><i class="fa-solid fa-check" style="color: #ffffff;"></i></div>
+        <h2>Thank You!</h2>
+        <p>Your details have successfully been received! Thanks!</p>
+        <button id="ok" onclick="closePopup()">OK</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/ddcbebe630.js" crossorigin="anonymous"></script>
+</html>
