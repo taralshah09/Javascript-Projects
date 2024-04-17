@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Search Engine</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Image Search Engine</h2>
+    </header>
+    <main>
+      <form id="search-form">
+        <input type="text" placeholder="Search anything here..." id="search" />
+        <button id="search-btn" type="submit">Search</button>
+      </form>
+      <div id="result-div"></div>
+      <button id="show-more">Show more</button>
+    </main>
+  </body>
+
+  <script>
+    const search = document.getElementById("search");
+    const searchBtn = document.getElementById("search-btn");
+    const result = document.getElementById("result-div");
+    const showMore = document.getElementById("show-more");
+    const searchForm = document.getElementById("search-form");
+
+    const API_KEY = "HO5c0GrIiA4buzSRneqEIZuWcImn8oSdDyV1MTmgP6E";
+    let keyword = "";
+    let page = 1;
+    let per_page = 9;
+
+    async function getImages() {
+      keyword = search.value;
+      //   const url = `https://api.unsplash.com/search/collections?page=${page}&query=${keyword}&client_id=${API_KEY}&per_page=12`;
+      const url = `https://api.unsplash.com/search/collections?page=${page}&query=${keyword}&client_id=HO5c0GrIiA4buzSRneqEIZuWcImn8oSdDyV1MTmgP6E&per_page=${per_page}`;
+
+      const res = await fetch(url);
+      const data = await res.json();
+
+      const results = data.results;
+      console.log(data);
+
+      if(page === 1){
+        result.innerHTML = "";
+      }
+      results.map((elem) => {
+        const image = document.createElement("img");
+        image.src = elem.cover_photo.urls.small;
+        const imageLink = document.createElement("a");
+        imageLink.href =elem.cover_photo.links.html;
+        imageLink.target = "_blank";
+        imageLink.appendChild(image);
+        result.appendChild(imageLink);
+      });
+
+      showMore.style.display = "block";
+
+      showMore.addEventListener("click",()=>{
+        page++;
+        getImages();
+      })
+    }
+
+    searchForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+    //   page = 1;
+      per_page = 9;
+      getImages();
+    });
+  </script>
+</html>

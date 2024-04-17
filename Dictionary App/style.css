@@ -77,7 +77,7 @@ footer {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  /* text-align: left; */
+  text-align: left;
 
 }
 
