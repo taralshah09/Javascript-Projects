@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+}
+
+body{
+    background: #333;
+}
+.search-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 550px;
+    background: white;
+    border-radius: 5px;
+}
+
+.search-box .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid white;
+    /* background: white; */
+}
+
+.search-box .row input{
+    flex: 1;
+    height: 100%;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+}
+.search-box .row button{
+    padding: 0 20px;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 15px;
+}
+.result-box{
+    border-top: 1px solid #222;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+.result-box ul{
+   width: 100%;
+    padding: 0 8px 10px 8px;
+    list-style: none;
+
+   
+}
+.result-box li{
+    margin-top: 10px;
+    padding: 10px 15px;
+    /* background: #222; */
+    transition: 0.3s;
+}
+.result-box li:hover{
+    background: #f2f2f2;
+}
