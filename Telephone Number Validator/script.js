@@ -72,8 +72,7 @@ const createResult = (num, ans) => {
   const resultEl = document.createElement("div");
   resultEl.classList.add("result-el");
   resultEl.innerHTML = `
-    // <p>${ans} US number:<br>${num}
-    <p>${ans} US number:${num}
+    <p>${ans} US number:<br>${num}
     </p>`;
   resultsDiv.appendChild(resultEl);
   userInput.value = ""
