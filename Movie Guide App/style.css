@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+}
+
+header {
+  padding: 20px;
+  background: #34495e;
+  color: white;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav h2 {
+  font-size: 25px;
+}
+header nav form {
+  width: 40%;
+  background: white;
+  display: flex;
+  height: 35px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+header nav form input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  height: 100%;
+  padding: 0 25px;
+  font-size: 15px;
+}
+
+header nav form button {
+  height: 100%;
+  padding: 0 25px;
+  border: 0;
+  outline: 0;
+  background: #f39c12;
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #34495e;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.result-container {
+  width: 70%;
+  margin: 45px auto;
+  padding: 10px 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.14);
+  min-height: 65vh;
+  display: flex;
+  /* align-items: center; */
+  justify-content: flex-start;
+  gap: 15px;
+  position: relative;
+}
+
+.result-container .img-box {
+  flex: 0.4;
+  height: 61vh;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 17px 18px;
+
+}
+
+
+.result-container .img-box img {
+  height: 100%;
+  border-radius: 15px;
+}
+
+.result-container .movie-details{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 35px;
+    width: 100%;
+    align-items: center;
+}
+
+.result-container .movie-details .title{
+    font-size: 35px;
+}
+
+.result-container .movie-details .rating{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.result-container .movie-details .released-date{
+    width: 100%;
+    margin: 15px 0 0 0;
+    text-align: left;
+}
+.result-container .movie-details .duration{
+    width: 100%;
+    margin: 15px 0 0 0;
+    text-align: left;
+}
+.result-container .movie-details .cast{
+    width: 100%;
+    text-align: left;
+    margin: 15px 0 0 0;
+}
+.result-container .movie-details .plot{
+    width: 100%;
+    text-align: justify;
+    margin: 15px 0 0 0;
+    display: flex;
+    gap: 10px;
+}
+.result-container .movie-details .plot strong{
+    display: block;
+}
+
+.result-container .buttons-div{
+    width: 100%;
+    padding: 30px 15px;
+    /* background: black; */
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
